@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hm1l0t-adaptersel"
+version = "0.1.0"
+description = "按数据量与可接受损失为参数高效微调方案打分排序"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "hm1l0t" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://hm1l0t.github.io"
+Repository = "https://github.com/hm1l0t/adaptersel"
+Issues = "https://github.com/hm1l0t/adaptersel/issues"
+
+[project.scripts]
+adaptersel = "adaptersel:main"
+
+[tool.setuptools]
+py-modules = ["adaptersel"]
